@@ -12,7 +12,7 @@ a{
 .left-side{
     background: #232533;
     width: 13vw;
-    height: 100vh;
+    /* height: 100vh; */
     /* position: fixed; */
 }
 .streamix{
@@ -40,6 +40,9 @@ li:hover{
     background: #13141c;
     margin: 10px 0 0 10px;
 }
+#logout{
+    margin-top: 115px;
+}
 
 .main-content{
     width: 71vw;
@@ -50,6 +53,9 @@ li:hover{
 .right-side{
     background: #232533;
     width: 20vw;
-    height: 100vh;
+    /* height: 100vh; */
     /* position: fixed; */
 }
+
+
+
