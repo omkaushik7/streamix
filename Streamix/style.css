@@ -6,11 +6,14 @@ a{
     text-decoration: none;
     color: #C5CAF6;
 }
+.flex{
+    display: flex;
+}
 .left-side{
     background: #232533;
     width: 13vw;
     height: 100vh;
-/*     position: fixed; */
+    /* position: fixed; */
 }
 .streamix{
     margin-top: 30px;
@@ -27,7 +30,7 @@ ul{
 li{
     padding: 15px;
 }
-li:first-child{
+ul a:first-child{
     border-radius: 55px 0 0 56px;
     background: #13141c;
     margin: 10px 0 0 10px;
@@ -37,6 +40,16 @@ li:hover{
     background: #13141c;
     margin: 10px 0 0 10px;
 }
+
 .main-content{
-    
+    width: 71vw;
+    height: 100vh;
+    background: #0E0F15;
+}
+
+.right-side{
+    background: #232533;
+    width: 20vw;
+    height: 100vh;
+    /* position: fixed; */
 }
