@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -46,8 +47,35 @@ li:hover{
 
 .main-content{
     width: 71vw;
-    height: 100vh;
+    /* height: 100vh; */
     background: #0E0F15;
+    padding: 0 50px;
+}
+.nav-bar{
+    display: flex;
+    margin-top: 40px;
+}
+
+#search{
+    width: 190px;
+    /* height: 32px; */
+    border: none;
+    border-radius: 10px;
+    padding: 10px 35px 10px 10px;
+    outline: none;
+    background: #484b61;
+    color: #d1d3e6;
+}
+.mr-35{
+    margin: -35px;
+    cursor: pointer;
+    color: #d1d3e6;
+}
+.noti-chat{
+    display: flex;
+    margin: 0 0 0 113px;
+    justify-content: space-between;
+    width: 100px;
 }
 
 .right-side{
