@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:sf-compact-display;
+    font-size: 18px;
+}
+@font-face {
+    font-family:sf-compact-display ;
+    src: url(/Streamix/sf-compact-display-medium-5864711817c30.otf);
 }
 a{
     text-decoration: none;
@@ -12,9 +18,9 @@ a{
 }
 .left-side{
     background: #232533;
-    width: 13vw;
-    /* height: 100vh; */
-    /* position: fixed; */
+    width: 14vw;
+    height: 100%;
+    position: fixed;
 }
 .streamix{
     margin-top: 30px;
@@ -31,7 +37,7 @@ ul{
 li{
     padding: 15px;
 }
-ul a:first-child{
+li:first-child{
     border-radius: 55px 0 0 56px;
     background: #13141c;
     margin: 10px 0 0 10px;
@@ -41,27 +47,33 @@ li:hover{
     background: #13141c;
     margin: 10px 0 0 10px;
 }
+.nav-section{
+    padding-left: 12px;
+}
 #logout{
     margin-top: 115px;
 }
 
 .main-content{
     width: 71vw;
-    /* height: 100vh; */
+    height: 100%;
     background: #0E0F15;
     padding: 0 50px;
+    margin-left: 175px;
+
 }
 .nav-bar{
     display: flex;
     margin-top: 40px;
+    justify-content: space-between;
 }
 
 #search{
     width: 190px;
     /* height: 32px; */
     border: none;
-    border-radius: 10px;
-    padding: 10px 35px 10px 10px;
+    border-radius: 20px;
+    padding: 10px 40px 10px 20px;
     outline: none;
     background: #484b61;
     color: #d1d3e6;
@@ -73,10 +85,97 @@ li:hover{
 }
 .noti-chat{
     display: flex;
-    margin: 0 0 0 113px;
     justify-content: space-between;
     width: 100px;
 }
+.watch-list-and-share{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.watch-list{
+    width: 100px;
+    height: 40px;
+    background: #262837;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.watch-list p{
+    color: #C5CAF6;
+    font-size: 12px;
+}
+.share{
+    display: flex;
+    align-items: center;
+}
+.ad-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 36px;
+}
+.ad{
+    width: 100%;
+    height: 50px;
+    background: #252736;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 28px;
+}
+.create-profile{
+    color: #0088FF;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 11px;
+    height: 36px;
+    margin: 7px;
+}
+.streaming{
+    display: flex;
+    justify-content: space-between;
+}
+.streaming p{
+    color: #ffff;
+    font-size: 24px;
+}
+#movies{
+    background: none;
+    border: none;
+    outline: none;
+    color: #ffff;
+}
+#movies option{
+    color: #ffff;
+    background:#232533;
+}
+.streaming-contents{
+    margin: 33px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 19px;
+}
+.stream-video{
+    width: 190px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
 
 .right-side{
     background: #232533;
