@@ -238,7 +238,7 @@ a{
   min-height: 100vh;
   top: 0;
   left: 78px;
-  width: calc(100% - 340px);
+  width:max-content;
   transition: all 0.5s ease;
   z-index: 2;
   padding: 0 50px;
