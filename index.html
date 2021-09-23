@@ -7,106 +7,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streamix</title>
     <link rel="stylesheet" href="/Streamix/style.css">
-    <script src="https://kit.fontawesome.com/399ce3e909.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <div class="flex">
-        <aside class="left-side">
-            <div class="logo">
-                <img class="streamix" src="/Streamix/brand_logo.png" alt="">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#"><i class="fas fa-home"></i> <span class="nav-section"> Home </span></a></li>
-                    <li><a href="#"><i class="far fa-star"></i> <span class="nav-section"> Trending </span></a></li>
-                    <li><a href="#"><i class="fas fa-gamepad"></i> <span class="nav-section"> Suggestions </span></a>
+            <div class="sidebar">
+                <div class="logo-details">
+                    <div class="logo_name"><img src="/Streamix/brand_logo.png" alt=""></div>
+                    <i class='bx bx-menu' id="btn"></i>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-home bx-flip-horizontal' ></i>
+                            <span class="links_name">Home</span>
+                        </a>
+                        <span class="tooltip">Home</span>
                     </li>
-                    <li><a href="#"><i class="fas fa-th-large"></i> <span class="nav-section"> Categories</span></a>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-star bx-flip-horizontal' ></i>
+                            <span class="links_name">Trending</span>
+                        </a>
+                        <span class="tooltip">Trending</span>
                     </li>
-                    <li><a href="#"><i class="fas fa-compass"></i> <span class="nav-section"> Discover </span></a></li>
-                    <li><a href="#"><i class="fas fa-calendar-alt"></i> <span class="nav-section"> Schedule </span></a>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-joystick'></i>
+                            <span class="links_name">Suggestions</span>
+                        </a>
+                        <span class="tooltip">Suggestions</span>
                     </li>
-                    <li><a href="#"><i class="fas fa-cog"></i> <span class="nav-section"> Settings </span></a></li>
-                    <li id="logout"><a href="#"><i class="fas fa-arrow-circle-left"></i> <span> Logout </span></a></li>
-
+                    <li>
+                        <a href="#">
+                            <i class='bx bxs-category'></i>
+                            <span class="links_name">Categories</span>
+                        </a>
+                        <span class="tooltip">Categories</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-compass' ></i>
+                            <span class="links_name">Discover</span>
+                        </a>
+                        <span class="tooltip">Discover</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bxs-calendar'></i>
+                            <span class="links_name">Schedule</span>
+                        </a>
+                        <span class="tooltip">Schedule</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-cog'></i>
+                            <span class="links_name">Setting</span>
+                        </a>
+                        <span class="tooltip">Setting</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='bx bx-log-out' id="log_out"></i>
+                            <span class="links_name">Log out</span>
+                        </a>
+                        <span class="tooltip">Log out</span>
+                    </li>
                 </ul>
-            </nav>
-        </aside>
-        <main class="main-content">
-            <div class="nav-bar">
-                <div class="search-bar">
-                    <input type="text" name="search" id="search" placeholder="Search here...">
-                    <i class="fas fa-search mr-35"></i>
-                </div>
-                <div class="noti-chat">
-                    <div class="notification">
-                        <img src="/Streamix/Notification.png" alt="Notification">
-                    </div>
-                    <div class="chat">
-                        <img src="/Streamix/Chat.png" alt="Chat">
-                    </div>
-                </div>
-                <div class="watch-list-and-share">
-                    <div class="watch-list">
-                        <img src="/Streamix/watch-list-icon.png" alt="">
-                        <p>Watch list</p>
-                    </div>
-                    <div class="share">
-                        <img src="/Streamix/share.png" alt="share" title="Share">
-                    </div>
-                </div>
             </div>
-            <section class="hero-content">
-                <section class="ad-banner">
-                    <a href="http://fueler.io" target="_blank" rel="noopener noreferrer">
-                        <img style="border-radius: 8px 8px 0 0; width: 100%; height: 180px;" src="/Streamix/banner.png" alt=""></a>
-                    <div class="ad">
-                        <div style="display: flex;">
-                            <img style="height: 50%; margin: 12px;" src="/Streamix/fueler-icon.svg" alt="">
-                            <div class="name-and-dis">
-                                <p style="margin-top: 6px; font-size: 14px; color: #ffff;"> <img src="/Streamix/ad_badge.png" alt="ad_badge"> Fueler.io</p>
-                                <p style="font-size: 14px; color:#C5CAF6;">Discover Inspiring Creators Changing the
-                                    World. Join the Revolution 🌍</p>
+            <main class="home-section">
+                <div class="nav-bar">
+                    <div class="search-bar">
+                        <input type="text" name="search" id="search" placeholder="Search here...">
+                        <i class='bx bx-search mr-35' ></i>
+                    </div>
+                    <div class="noti-chat">
+                        <div class="notification">
+                            <img src="/Streamix/Notification.png" alt="Notification" title="Notification">
+                        </div>
+                        <div class="chat">
+                            <img src="/Streamix/Chat.png" alt="Chat" title="Chat Box">
+                        </div>
+                    </div>
+                    <div class="watch-list-and-share">
+                        <div class="watch-list">
+                            <img src="/Streamix/watch-list-icon.png" alt="">
+                            <p>Watch list</p>
+                        </div>
+                        <div class="share">
+                            <img src="/Streamix/share.png" alt="share" title="Share">
+                        </div>
+                    </div>
+                </div>
+                <section class="hero-content">
+                    <section class="ad-banner">
+                        <a href="http://fueler.io" target="_blank" rel="noopener noreferrer">
+                            <img style="border-radius: 8px 8px 0 0; width: 100%; height: 180px;"
+                                src="/Streamix/banner.png" alt=""></a>
+                        <div class="ad">
+                            <div style="display: flex;">
+                                <img style="height: 50%; margin: 12px;" src="/Streamix/fueler-icon.svg" alt="">
+                                <div class="name-and-dis">
+                                    <p style="margin-top: 6px; font-size: 14px; color: #ffff;"> <img
+                                            src="/Streamix/ad_badge.png" alt="ad_badge"> Fueler.io</p>
+                                    <p style="font-size: 14px; color:#C5CAF6;">Discover Inspiring Creators Changing the
+                                        World. Join the Revolution 🌍</p>
+                                </div>
+                            </div>
+                            <div class="create-profile">
+                                <a href="https://fueler.io/request-invite" target="_blank" rel="noopener noreferrer">
+                                    <p style="color: #0088FF;">Create your profile</p>
+                                </a>
                             </div>
                         </div>
-                        <div class="create-profile">
-                            <a href="https://fueler.io/request-invite" target="_blank" rel="noopener noreferrer"><p style="color: #0088FF;">Create your profile</p></a>
+                    </section>
+                    <section class="streaming">
+                        <p>Streaming</p>
+                        <div class="category">
+                            <img src="/Streamix/filter.png" alt="filter">
+                            <select name="movies" id="movies">
+                                <option value="Hollywood">Hollywood</option>
+                                <option value="Hollywood">Bollywood</option>
+                                <option value="Hollywood">Tollywood</option>
+                            </select>
                         </div>
+                    </section>
+                    <section class="streaming-contents">
+                        <div class="stream-video">
+                            <img style="width: -webkit-fill-available; height: -webkit-fill-available;"
+                                src="https://contentserver.com.au/assets/646095_523722_p12543972_p_v8_ab.jpg" alt="">
+                        </div>
+                        <div class="stream-video"></div>
+                        <div class="stream-video"></div>
+                        <div class="stream-video"></div>
+                        <div class="stream-video"></div>
+                        <div class="stream-video"></div>
+                        <div class="stream-video"></div>
+                        <div class="stream-video"></div>
+                        <div class="stream-video"></div>
+                        <div class="stream-video"></div>
+                        <div class="stream-video"></div>
+                        <div class="stream-video"></div>
+                    </section>
+                </section>
+            </main>
+            <aside class="right-side">
+                <div class="user">
+                    <div class="user-dp">
+                        <img src="/Streamix/user_dp.png" alt="">
                     </div>
-                </section>
-                <section class="streaming">
-                    <p>Streaming</p>
-                    <div class="category">
-                        <img src="/Streamix/filter.png" alt="filter">
-                        <select name="movies" id="movies">
-                            <option value="Hollywood">Hollywood</option>
-                            <option value="Hollywood">Bollywood</option>
-                            <option value="Hollywood">Hollywood</option>
-                            <option value="Hollywood">Hollywood</option>
-                        </select>
+                    <div class="user-name-and-gmail">
+                        <p class="name">Abhishek Saha</p>
+                        <p class="mail">pixabuddy@gmail.com</p>
                     </div>
-                </section>
-                <section class="streaming-contents">
-                    <div class="stream-video"></div>
-                    <div class="stream-video"></div>
-                    <div class="stream-video"></div>
-                    <div class="stream-video"></div>
-                    <div class="stream-video"></div>
-                    <div class="stream-video"></div>
-                    <div class="stream-video"></div>
-                    <div class="stream-video"></div>
-                    <div class="stream-video"></div>
-                    <div class="stream-video"></div>
-                    <div class="stream-video"></div>
-                    <div class="stream-video"></div>
-                </section>
-            </section>
-        </main>
-        <aside class="right-side">
-
-        </aside>
+                    <div class="pro-user">Pro</div>
+                </div>
+            </aside>
     </div>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();//calling the function(optional)
+        });
+
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+            }
+        }
+    </script>
 </body>
 
 </html>
