@@ -359,10 +359,83 @@ a{
   font-size: 25px;
   padding: 10px;
 }
+.game-streaming{
+  margin: 40px 0 0;
+}
+.game-streaming-hearder{
+  display: flex;
+  justify-content: center;
+}
+.game-streaming-hearder p{
+  font-size: 24px;
+  color: #C4C8ED;
+  display: flex;
+  align-items: center;
+}
+.streams{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 12px;
+  gap: 16px;
+}
+.game{
+  border: 1px solid red;
+  width: 120px;
+  height: 75px;
+  border-radius: 15px;
+  background-image: url(/Streamix/Rectangle\ 31.png);
+}
+.liveandwatching{
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 8px;
+}
+/* .favourite-streamers{
 
+} */
+.favourite-streamers p{
+  font-size: 24px;
+  color: #C4C8ED;
+  padding: 20px;
+}
+.fav-streamers{
+   display: flex;
+   justify-content: space-evenly;
+}
+.streamers{
+  width: 40px;
+  height: 40px;
+  border-radius: 300px;
 
+}
+/* .friends{
+   
+} */
+.friends p{
+  font-size: 24px;
+  color: #C4C8ED;
+  padding: 20px;
+}
+.Friends{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.streamer-friends{
+  display: flex;
+  justify-content: space-evenly;
+}
+/* .name-and-followers{
 
-
+} */
+/* .name{
+  font-size: 20px;
+} */
+.followers{
+  color: #C5CAF6;
+  font-size: 12px;
+}
 @media (max-width:1000px){
   .right-side{
     display: none;
