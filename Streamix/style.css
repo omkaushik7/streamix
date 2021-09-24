@@ -154,7 +154,7 @@ a{
   background: #11101D;
 }
 .sidebar li a:hover{
-  background: #FFF;
+  background: #979bb6;
 }
 .sidebar li a .links_name{
   color: #fff;
@@ -185,11 +185,11 @@ a{
   background: #0E0F15;
   min-height: 100vh;
   top: 0;
-  left: 78px;
-  width: max-content;
+  left: 38px;
+  max-width: 100%;
   transition: all 0.5s ease;
   z-index: 2;
-  padding: 0 50px;
+  padding: 0 100px;
 }
 /* .sidebar.open ~ .home-section{
   left: 250px;
@@ -273,7 +273,7 @@ a{
     border-radius: 20px;
     padding: 11px;
     height: 36px;
-    margin: 7px;
+    margin: auto 12px;
 }
 .streaming{
     display: flex;
@@ -294,54 +294,79 @@ a{
     background:#232533;
 }
 .streaming-contents{
-    margin: 33px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 19px;
+  margin: 33px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 19px;
 }
 .stream-video{
-    width: 190px;
-    height: 200px;
-    border: 1px solid red;
+  width: 190px;
+  height: 200px;
+  border: 1px solid red;
 }
 .right-side{
-    background: #232533;
-    width: calc(100% - 74%);
-    /* height: 100vh; */
-    /* position: fixed; */
+  background: #232533;
+  position: relative;
+  z-index: 3;
 }
 .user{
-    border: 1px solid red;
-    width: 80%;
-    height: 50px;
-    margin: 30px auto;
-    display: flex;
+  /* border: 1px solid red; */
+  width: 80%;
+  height: 50px;
+  margin: 30px auto;
+  display: flex;
 }
 .user-dp{
-    width: 42px;
-    height: 42px;
-    border-radius: 123px;
+  width: 42px;
+  height: 42px;
+  border-radius: 123px;
 }
 .user-name-and-gmail{
-    padding: 4px 0px 0px 8px;
+  padding: 4px 0px 0px 8px;
 }
 .name{
-    font-size: 15px;
-    color: #ffff;
-    padding-bottom: 3px;
+  font-size: 15px;
+  color: #ffff;
+  padding-bottom: 3px;
 }
 .mail{
-    font-size: 11px;
-    color: #C5CAF6;
+  font-size: 11px;
+  color: #C5CAF6;
 }
 .pro-user{
-    width: 120px;
-    height: 20px;
-    background-color: #FDD231;
-    text-align: center;
-    border-radius: 12345px;
+  width: 120px;
+  height: 20px;
+  background-color: #FDD231;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 600;;
+}
+.go-live{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 224px;
+  height: 50px;
+  margin: auto;
+  border-radius: 23px;
+  background-image: linear-gradient(#0088FF, #0F9AFF);
+  box-shadow: 0px 5.06024px 32.3855px rgba(49, 168, 255, 0.34);
+}
+.go-live p{
+  color: #FFFFFF;
+  font-size: 25px;
+  padding: 10px;
 }
 
+
+
+
+@media (max-width:1000px){
+  .right-side{
+    display: none;
+  }
+}
 
 
