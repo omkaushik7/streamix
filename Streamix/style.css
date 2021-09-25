@@ -301,9 +301,35 @@ a{
   gap: 19px;
 }
 .stream-video{
-  width: 190px;
-  height: 200px;
-  border: 1px solid red;
+  width: 202px;
+  height: 240px;
+  border-radius: 8px;
+  background-color: #101118;
+}
+.stream-video img{
+  max-width: 100%;
+}
+.video-info{
+  padding: 13px;
+}
+.moviename{
+  color: #FFFFFF;
+}
+.watching-add{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.watching{
+  display: flex;
+  align-items: center;
+}
+.watching div{
+  display: flex;
+}
+.add{
+  display: flex;
+  align-items: center;
 }
 .right-side{
   background: #232533;
@@ -379,17 +405,53 @@ a{
   margin: 12px;
   gap: 16px;
 }
-.game{
-  border: 1px solid red;
+.game1 {
   width: 120px;
   height: 75px;
   border-radius: 15px;
-  background-image: url(/Streamix/Rectangle\ 31.png);
+  background-image: url(/Streamix/game1.png);
+  background-repeat: no-repeat;
+}
+.game2 {
+  width: 120px;
+  height: 75px;
+  border-radius: 15px;
+  background-image: url(/Streamix/game2.png);
+  background-repeat: no-repeat;
+}
+.game3 {
+  width: 120px;
+  height: 75px;
+  border-radius: 15px;
+  background-image: url(/Streamix/game3.png);
+  background-repeat: no-repeat;
+  backdrop-filter: blur(1px);
+}
+.game4 {
+  width: 120px;
+  height: 75px;
+  border-radius: 15px;
+  background-image: url(/Streamix/game4.png);
+  background-repeat: no-repeat;
 }
 .liveandwatching{
   display: flex;
   justify-content: space-between;
   padding: 3px 8px;
+}
+.live{
+  color: #fff;
+  font-size: 8px;
+}
+.gamer-profile{
+  display: flex;
+  align-items: center;
+  padding: 13px 7px 0;
+}
+.gamer-name{
+  color: #FFFFFF;
+  font-size: 10px;
+  padding-left: 5px;
 }
 /* .favourite-streamers{
 
@@ -402,6 +464,7 @@ a{
 .fav-streamers{
    display: flex;
    justify-content: space-evenly;
+   align-items: baseline;
 }
 .streamers{
   width: 40px;
@@ -420,14 +483,18 @@ a{
 .Friends{
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 18px;
 }
 .streamer-friends{
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+.streamer-friends img{
+  width: 47px;
+    height: 48px;
 }
 /* .name-and-followers{
-
 } */
 /* .name{
   font-size: 20px;
@@ -440,6 +507,24 @@ a{
   .right-side{
     display: none;
   }
+  .mr-35{
+   display: none;
+}
+.noti-chat{
+  display: none;
+}
+.watch-list-and-share{
+  display: none;
+}
+.watch-list{
+  display: none;
+}
+.watch-list p{
+  display: none;
+}
+.share{
+  display: none;
+}
 }
 
 
