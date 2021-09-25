@@ -525,6 +525,9 @@ a{
 .share{
   display: none;
 }
+.home-section{
+  padding: 0 5px;
+}
 }
 
 
