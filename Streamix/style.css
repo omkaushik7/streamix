@@ -265,6 +265,10 @@ a{
     position: relative;
     bottom: 28px;
 }
+.name-and-dis p:last-child{
+  font-size: 12px; 
+  color:#C5CAF6;
+}
 .create-profile{
     color: #0088FF;
     border: 1px solid;
@@ -274,6 +278,11 @@ a{
     padding: 11px;
     height: 36px;
     margin: auto 12px;
+}
+.create-profile p{
+  color: #0088FF;
+  font-size: 12px;
+  text-align: center;
 }
 .streaming{
     display: flex;
@@ -534,12 +543,17 @@ a{
 .share{
   display: none;
 }
+.name-and-dis p:last-child{
+  font-size: 9px;
+}
+.create-profile p{
+  color: #0088FF;
+  font-size: 12px;
+  text-align: center;
+}
 .home-section{
   padding: 0 30px;
   left:58px ;
-}
-.name-and-dis p:last-child{
-  font-size: 9px;
 }
 .search-bar{
   display: flex;
