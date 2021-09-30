@@ -111,13 +111,13 @@
                             <div class="name-and-dis">
                                 <p style="margin-top: 10px; font-size: 14px; color: #ffff;"> <img
                                         src="/Streamix/ad_badge.png" alt="ad_badge"> Fueler.io</p>
-                                <p style="font-size: 12px; color:#C5CAF6;">Discover Inspiring Creators Changing the
+                                <p>Discover Inspiring Creators Changing the
                                     World. Join the Revolution 🌍</p>
                             </div>
                         </div>
                         <div class="create-profile">
                             <a href="https://fueler.io/request-invite" target="_blank" rel="noopener noreferrer">
-                                <p style="color: #0088FF; font-size: 12px;">Create your profile</p>
+                                <p>Create your profile</p>
                             </a>
                         </div>
                     </div>
@@ -666,12 +666,7 @@
             menuBtnChange();//calling the function(optional)
         });
 
-        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
-            sidebar.classList.toggle("open");
-            menuBtnChange(); //calling the function(optional)
-        });
-
-        // following are the code to change sidebar button(optional)
+        // following are the code to change sidebar button
         function menuBtnChange() {
             if (sidebar.classList.contains("open")) {
                 closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
