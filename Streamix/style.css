@@ -509,7 +509,7 @@ a{
   font-size: 12px;
 }
 @media (max-width:1000px){
- .sidebar{
+  .sidebar{
     width: 60px;
     padding: 6px 6px;
   }
@@ -535,7 +535,13 @@ a{
   display: none;
 }
 .home-section{
-  padding: 0 20px;
+  padding: 0 30px;
+  left:58px ;
+}
+.search-bar{
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 }
 
