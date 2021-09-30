@@ -538,6 +538,9 @@ a{
   padding: 0 30px;
   left:58px ;
 }
+.name-and-dis p:last-child{
+  font-size: 9px;
+}
 .search-bar{
   display: flex;
   align-items: center;
