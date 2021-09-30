@@ -298,16 +298,21 @@ a{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 19px;
+  gap: 40px 20px;
 }
 .stream-video{
   width: 202px;
   height: 240px;
-  border-radius: 8px;
   background-color: #101118;
 }
+.stream-preview{
+  width: 100%;
+  height: fit-content;
+  border-radius: 8px 8px 0 0;
+}
 .stream-video img{
-  max-width: 100%;
+  width: 100%;
+  height: 142px;
 }
 .video-info{
   padding: 13px;
@@ -492,7 +497,7 @@ a{
 }
 .streamer-friends img{
   width: 47px;
-    height: 48px;
+  height: 48px;
 }
 /* .name-and-followers{
 } */
